@@ -13,9 +13,12 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 for (let i = 1; i <= 100; i++) {
 
     let row = document.querySelector('.row');
-    let html = `<div class="col-1">
-             <div class="square d-flex justify-content-center align-items-center">1</div>
-            </div>`;
+    //Dato un container nel DOM, appendi un elemento html con il numero o la stringa corretta.
+    let number = `<div class="col">
+                      <div class="square d-flex justify-content-center align-items-center">${i}</div>
+                  </div>`;
+    row.insertAdjacentHTML('beforeend', number);              
+
 
     //Per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz" al posto del numero
     if ((i % 3 == 0) && (i % 5 == 0)) {
@@ -32,7 +35,7 @@ for (let i = 1; i <= 100; i++) {
     } else {
         //stampa il valore di "i"
         console.log(i);
-
+        
     }
 };
 
