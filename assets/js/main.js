@@ -10,34 +10,45 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 */
 
 //stampa in console i numeri da 1 a 100
-for (let i = 1; i <= 100; i++){
-    
+for (let i = 1; i <= 100; i++) {
+
     let row = document.querySelector('.row');
     let html = `<div class="col-1">
              <div class="square d-flex justify-content-center align-items-center">1</div>
-            </div>`; 
+            </div>`;
 
     //Per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz" al posto del numero
     if ((i % 3 == 0) && (i % 5 == 0)) {
         console.log('FizzBuzz');
-        
-     //Per i multipli di 5 stampi "Buzz" al posto del numero
-   } else if (i % 5 == 0){
-       console.log('Buzz');
 
-    //Per i multipli di 3 stampi “Fizz” al posto del numero
-   } else if (i % 3 == 0) {
+        //Per i multipli di 5 stampi "Buzz" al posto del numero
+    } else if (i % 5 == 0) {
+        console.log('Buzz');
+
+        //Per i multipli di 3 stampi “Fizz” al posto del numero
+    } else if (i % 3 == 0) {
         console.log('Fizz');
 
-   } else{
-       //stampa il valore di "i"
-       console.log(i);
+    } else {
+        //stampa il valore di "i"
+        console.log(i);
 
-   }
+    }
 };
 
 
 
+
+
+
+
+
+
+
+//Dato un container nel DOM, appendi un elemento html con il numero o la stringa corretta.
+
+
+//Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
 
 
 
